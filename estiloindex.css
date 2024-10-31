@@ -1,3 +1,27 @@
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Fondo del cuerpo de la página */
+.bodystyle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0b424c;
+  z-index: -2;
+}
+
 /* Video de fondo */
 .fondo {
   position: absolute;
@@ -9,16 +33,7 @@
   object-fit: cover;
 }
 
-.bodystyle {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #0b424c;
-  z-index: -2;
-}
-
+/* Sección de inicio con título y menú */
 .inicio {
   position: relative;
   display: flex;
@@ -29,82 +44,81 @@
   min-height: 100vh;
 }
 
-/* Estilo del título */
+/* Título principal en color amarillo */
 .inicio h1 {
-  font-family: Arial, sans-serif;
   font-size: 3em;
-  color: #000000;
+  color: #FFD700; /* Color amarillo */
   margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo del menú de botones */
+/* Menú de navegación principal */
 .menu {
   display: flex;
   gap: 20px;
   margin-top: 10px;
 }
 
-/* Estilos de los botones */
+/* Botones del menú en color celeste con letras blancas */
 .shadow-effect {
   border: none;
-  color: black;
   padding: 14px 28px;
   cursor: pointer;
   border-radius: 5px;
-  background-color: #3300ff;
-  transition: box-shadow 0.3s ease-in-out;
+  background-color: #00BFFF; /* Color celeste */
+  color: #FFFFFF; /* Letras blancas */
+  font-weight: bold;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
 }
 
-.shadow-effect {
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+.shadow-effect:hover {
+  background-color: #009ACD; /* Celeste más oscuro al pasar el cursor */
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Menú lateral común */
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: rgba(11, 66, 76, 0.9);
+  padding: 20px;
+  color: white;
+  overflow-y: auto;
+  text-align: center;
 }
 
 /* Menú lateral izquierdo */
 .menu-lateral-izquierda {
-  position: fixed;
-  top: 0;
   left: 0;
-  width: 200px;
-  height: 100%;
-  background-color: rgba(11, 66, 76, 0.9);
-  padding: 20px;
-  color: white;
-  overflow-y: auto;
-  text-align: center;
-}
-
-.menu-lateral-izquierda h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.imagenes-turismo img {
-  width: 100%;
-  margin-bottom: 15px;
-  border-radius: 8px;
 }
 
 /* Menú lateral derecho */
 .menu-lateral-derecha {
-  position: fixed;
-  top: 0;
   right: 0;
-  width: 200px;
-  height: 100%;
-  background-color: rgba(11, 66, 76, 0.9);
-  padding: 20px;
-  color: white;
-  overflow-y: auto;
-  text-align: center;
 }
 
-.menu-lateral-derecha h2 {
+/* Títulos de menús laterales en amarillo */
+.menu-lateral h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
+  color: #FFD700;
 }
 
+/* Imágenes en los menús laterales */
+.imagenes-turismo img,
 .imagenes-recetas img {
   width: 100%;
   margin-bottom: 15px;
   border-radius: 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.imagenes-turismo img:hover,
+.imagenes-recetas img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
 }
