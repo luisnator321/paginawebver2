@@ -1,0 +1,84 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* Estilo del contenedor principal */
+div {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilo del logo */
+img[src="imagenes/logo.jpg"] {
+    max-width: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    table-layout: fixed; /* Asegura que las imágenes se mantengan alineadas */
+}
+
+/* Estilo de las celdas */
+th, td {
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Estilo de las imágenes en la tabla */
+table img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover para las imágenes */
+table img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajuste de columnas */
+th, td {
+    width: 33.33%;
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    th, td {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,100 @@
+/* Estilo general para la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Contenedor principal */
+div {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilo del logo principal */
+div:first-of-type img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las imágenes generales */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido de texto */
+p {
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+/* Estilo para los títulos en cada sección */
+h1:not(:first-of-type) {
+    color: #2980b9;
+    font-size: 1.8em;
+    text-align: left;
+    margin-top: 30px;
+}
+
+/* Intercalar imágenes a partir del tercer div */
+div:nth-of-type(3) img {
+    width: 48%; /* Ajustar ancho para permitir intercalación */
+    height: auto;
+    margin: 0;
+    border-radius: 8px;
+}
+
+div:nth-of-type(3) img:nth-of-type(odd) {
+    float: left;
+    margin-right: 4%;
+}
+
+div:nth-of-type(3) img:nth-of-type(even) {
+    float: right;
+    margin-left: 4%;
+}
+
+/* Limpiar floats después de cada div */
+div::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    div {
+        padding: 15px;
+    }
+    
+    div:nth-of-type(3) img {
+        width: 100%;
+        float: none;
+        margin: 10px 0;
+    }
+}
