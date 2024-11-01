@@ -1,0 +1,104 @@
+/* Variables y estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background: url("background.jpg") no-repeat center center fixed; /* Imagen de fondo */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+/* Estilo del título */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+/* Estilo del contenedor principal */
+div {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    color: #333;
+}
+
+/* Estilo de las celdas */
+th, td {
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Estilo de las imágenes en la tabla */
+table img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover para las imágenes */
+table img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Enlaces de teléfono funcionales */
+a[href^="tel:"] {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* Texto debajo de las imágenes */
+p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Ajuste de columnas */
+th, td {
+    width: 33.33%;
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    th, td {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    table img {
+        width: 60px;
+    }
+}

@@ -1,0 +1,69 @@
+/* Estilo general para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor principal */
+div {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Estilo del título */
+h1 {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* Estilo del logo */
+div:first-of-type img {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del video */
+video {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Efecto de hover en el video */
+video:hover {
+    transform: scale(1.02); /* Efecto de zoom suave */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    div {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    video {
+        max-width: 100%;
+    }
+}
