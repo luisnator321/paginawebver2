@@ -1,0 +1,118 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor principal */
+div {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Estilos de encabezado */
+h1, h2, h3 {
+    text-align: center;
+    color: #444;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #666;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* Imagen de logo */
+img[src="imagenes/logo.jpg"] {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo de la lista de ingredientes */
+ol, ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ol ul {
+    font-size: 1em;
+    margin: 8px 0;
+    padding-left: 10px;
+    border-left: 3px solid #ddd;
+    color: #555;
+}
+
+/* Estilos de pasos de preparación */
+p {
+    line-height: 1.6;
+    color: #444;
+    margin: 5px 0;
+}
+
+/* Estilos de paso */
+div > h3 {
+    text-align: left;
+    color: #666;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+/* Estilos para la imagen de receta */
+img[src*="imagenes/imagen4.jpg"] {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Historia del plato */
+div > p {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+/* Estilo para dispositivos móviles */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    div {
+        width: 100%;
+        margin: 10px;
+        padding: 15px;
+    }
+    img[src="imagenes/logo.jpg"] {
+        max-width: 100px;
+    }
+}
